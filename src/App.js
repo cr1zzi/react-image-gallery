@@ -34,10 +34,12 @@ function App() {
           <Spinner />
         </h1>
       ) : (
-        <div className="grid grid-cols-4 gap-4 ">
-          {images.map((image) => (
-            <ImageCard key={image.id} image={image} />
-          ))}
+        <div className="">
+          <div className="grid justify-items-center lg:grid-cols-4 gap-4 md:grid-cols-3 sm:grid sm:grid-cols-1">
+            {images.map((image) => (
+              <ImageCard key={image.id} image={image} />
+            ))}
+          </div>
         </div>
       )}
     </div>
